@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Conexion con Node</title>
+
+</head>
+<body>
+    
+    <div class="login-page">
+        <div class="form">
+            <h3>Ver todos los Usuarios</h3>
+            <a href="/getUsers">Obtener Usuarios</a>
+            </div>
+            <div class="form">
+            <h3>Registrar Entrenador</h3>
+            <form name="registro" class="login-form" action="/addUser" method="post">
+                <input class="input" type="text" name="NombrePokemon" placeholder="Nombre Pokemon">
+                <input class="input" type="text" name="tipo" placeholder="Tipo">
+                <input class="input" type="text" name="NombreEntrenador" placeholder="Nombre Entrenador">
+                <input class="input" type="text" name="ataque" placeholder="Ataque">
+                <input class="input" type="number" name="idEntrenador" placeholder="id Entrenador">
+                <input class="button" type="submit" value="Agregar Entrenador">
+            </form>
+        </div>
+        <div class="form">
+            <h3>Eliminar Entrenador</h3>
+            <form name="eliminar" class="login-form" action="/deleteUser" method="post">
+                <input class="input" type="number" name="idEntrenador1" placeholder="id Entrenador">
+                <input class="input" type="text" name="NombreEntrenador1" placeholder="Nombre Entrenador">
+                <input class="button" type="submit" value="Eliminar Entrenador">
+            </form>
+        </div>
+        <div class="form">
+            <h3>Actualizar Entrenador</h3>
+            <form name="actualizar" class="login-form" action="/updateUser" method="post">
+                <input class="input" type="number" name="idEntrenador2" placeholder="id Entrenador">
+                <input class="input" type="text" name="NombrePokemon2" placeholder="Nombre Pokemon">
+                <input class="input" type="text" name="tipo2" placeholder="Tipo">
+                <input class="input" type="text" name="NombreEntrenador2" placeholder="Nombre Entrenador">
+                <input class="input" type="text" name="ataque2" placeholder="Ataque">
+                <input class="button" type="submit" value="Actualizar entrenador">
+            </form>
+        </div>
+</div>
+</body>
+</html>
